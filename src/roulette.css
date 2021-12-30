@@ -1,0 +1,99 @@
+body {
+  background-color: #0f212e;
+}
+.roulette-container {
+  max-width: 1000px;
+  margin:auto;
+  overflow:hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.roll {
+  margin: 10px -30px;
+  /* background-color: #000; */
+  box-shadow: 0 0 15px 6px rgb(0 0 0 / 50%);
+  padding: 2px;
+  position: relative;
+}
+.numbers {
+  white-space: nowrap;
+}
+.number {
+  width: 95px;
+  height: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  -moz-transition: transform .4s ease-out;
+  -o-transition: transform .4s ease-out;
+  -webkit-transition: transform .4s ease-out;
+  -ms-transition: transform .4s ease-out;
+}
+
+.number.red, .entry_btn.red {
+  background: #ff7a7b;
+  background: -moz-linear-gradient(top,#ff7a7b 0%,#ff7a7b 40%,#ff5959 40%,#ff5959 40%,#ff5959 100%);
+  background: -webkit-linear-gradient(top,#ff7a7b 0%,#ff7a7b 40%,#ff5959 40%,#ff5959 40%,#ff5959 100%);
+  background: linear-gradient(to bottom,#ff7a7b 0%,#ff7a7b 40%,#ff5959 40%,#ff5959 40%,#ff5959 100%);
+}
+
+.number.black, .entry_btn.black {
+  background: #333;
+  background: -moz-linear-gradient(top,#333333 0%,#333333 40%,#000000 40%,#000000 40%,#000000 100%);
+  background: -webkit-linear-gradient(top,#333333 0%,#333333 40%,#000000 40%,#000000 40%,#000000 100%);
+  background: linear-gradient(to bottom,#333333 0%,#333333 40%,#000000 40%,#000000 40%,#000000 100%);
+}
+
+.number.green, .entry_btn.green {
+  background: #3fe694;
+  background: -moz-linear-gradient(top,#3fe694 0%,#3fe696 40%,#0ee07b 40%,#0ee07b 40%,#0ee07b 100%);
+  background: -webkit-linear-gradient(top,#3fe694 0%,#3fe696 40%,#0ee07b 40%,#0ee07b 40%,#0ee07b 100%);
+  background: linear-gradient(to bottom,#3fe694 0%,#3fe696 40%,#0ee07b 40%,#0ee07b 40%,#0ee07b 100%);
+}
+
+
+/* BETS */
+.bets-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.bet-container {
+  min-width: 300px;
+  background:#394a52;
+  border-radius:10px;
+  color:#FFF;
+}
+
+.bet-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bet-stats span {
+  padding: 10px;
+}
+
+.btn_bg {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.entry_btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgb(34 37 39 / 70%);
+  display: block;
+  position: relative;
+  border-radius: 6px;
+}
