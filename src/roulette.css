@@ -1,6 +1,18 @@
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
+  padding:0;
+  margin:0;
+  width:100%;
+  min-height:100%;
+
+  font-family: "proxima-nova",sans-serif;
+  font-size: 14px;
   background-color: #0f212e;
 }
+
 .roulette-container {
   max-width: 1000px;
   margin:auto;
@@ -15,6 +27,36 @@ body {
   box-shadow: 0 0 15px 6px rgb(0 0 0 / 50%);
   padding: 2px;
   position: relative;
+}
+.number_mark {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background-color: #adbec6;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+}
+.number_mark:before, .number_mark:after {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  position: absolute;
+  content: "";
+  left: 50%;
+}
+.number_mark:before {
+  border-bottom: 15px solid #adbec6;
+  top: 100%;
+  transform: translateX(-50%);
+  margin-top: -7px;
+}
+.number_mark:after {
+  border-top: 15px solid #adbec6;
+  bottom: 100%;
+  transform: translateX(-50%) translateY(7px);
 }
 .numbers {
   white-space: nowrap;
@@ -70,6 +112,16 @@ body {
   border-radius:10px;
   color:#FFF;
 }
+.bet-container ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.bet-container ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
 .bet-stats {
   display: flex;
@@ -87,6 +139,7 @@ body {
 }
 
 .entry_btn {
+  cursor:pointer;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
