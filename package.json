@@ -20,6 +20,8 @@
     "axios": "^0.24.0",
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
-    "path": "^0.12.7"
+    "http": "0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^4.4.0"
   }
 }
